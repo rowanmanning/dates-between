@@ -1,33 +1,33 @@
 {
-    "name": "dates-between",
-    "version": "1.0.1",
-
-    "description": "Get all of the dates between two given dates",
-    "keywords": [ "between", "date", "generator" ],
-    "author": "Rowan Manning (http://rowanmanning.com/)",
-
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rowanmanning/dates-between.git"
-    },
-    "homepage": "https://github.com/rowanmanning/dates-between",
-    "bugs": "https://github.com/rowanmanning/dates-between/issues",
-    "license": "MIT",
-
-    "engines": {
-        "node": ">=4"
-    },
-    "devDependencies": {
-        "istanbul": "~0.4",
-        "jshint": "^2",
-        "jscs": "^2",
-        "mocha": "^2",
-        "mockery": "^1",
-        "proclaim": "^3"
-    },
-
-    "main": "./lib/dates-between.js",
-    "scripts": {
-        "test": "make ci"
-    }
+  "name": "dates-between",
+  "version": "1.0.1",
+  "description": "Get all of the dates between two given dates",
+  "keywords": [
+    "between",
+    "date",
+    "generator"
+  ],
+  "author": "Rowan Manning (http://rowanmanning.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rowanmanning/dates-between.git"
+  },
+  "homepage": "https://github.com/rowanmanning/dates-between",
+  "bugs": "https://github.com/rowanmanning/dates-between/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "istanbul": "~0.4",
+    "jshint": "^2",
+    "jscs": "^2",
+    "mocha": "^2",
+    "mockery": "^1",
+    "proclaim": "^3"
+  },
+  "main": "./lib/dates-between.js",
+  "scripts": {
+    "test": "make ci"
+  }
 }
