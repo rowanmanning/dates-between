@@ -12,7 +12,7 @@ Get all of the dates between two given dates, with [generators].
 [![MIT licensed][shield-license]][info-license]
 
 ```js
-for (let date of datesBetween(startDate, endDate)) {
+for (const date of datesBetween(startDate, endDate)) {
     console.log(date);
 }
 ```
@@ -60,7 +60,7 @@ datesBetween(new Date('2016-01-01'), new Date('2016-02-01'));
 This returns an [iterable] which can be iterated over in a `for..of` construct. The yielded dates include both the start and end date that were passed in.
 
 ```js
-for (let date of datesBetween(startDate, endDate)) {
+for (const date of datesBetween(startDate, endDate)) {
     console.log(date);
 }
 ```

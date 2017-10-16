@@ -19,9 +19,9 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "@rowanmanning/eslint-config": "^1.0.0",
+    "eslint": "^4.9.0",
     "istanbul": "~0.4",
-    "jshint": "^2",
-    "jscs": "^2",
     "mocha": "^2",
     "mockery": "^1",
     "proclaim": "^3"
