@@ -1,4 +1,3 @@
-// jscs:disable maximumLineLength
 'use strict';
 
 const mockery = require('mockery');
