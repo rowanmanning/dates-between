@@ -1,6 +1,5 @@
 
-Dates Between
-=============
+# Dates Between
 
 Get all of the dates between two given dates, with [generators].
 
@@ -12,14 +11,16 @@ Get all of the dates between two given dates, with [generators].
 [![MIT licensed][shield-license]][info-license]
 
 ```js
+const startDate = new Date('2016-01-01');
+const endDate = new Date('2017-01-01');
+
 for (const date of datesBetween(startDate, endDate)) {
     console.log(date);
 }
 ```
 
 
-Table of Contents
------------------
+## Table of Contents
 
   * [Requirements](#requirements)
   * [Usage](#usage)
@@ -27,8 +28,7 @@ Table of Contents
   * [License](#license)
 
 
-Requirements
-------------
+## Requirements
 
 Dates Between requires the following to run:
 
@@ -36,8 +36,7 @@ Dates Between requires the following to run:
   * [npm] (normally comes with Node.js)
 
 
-Usage
------
+## Usage
 
 Install Dates Between with [npm]:
 
@@ -78,8 +77,7 @@ const dates = Array.from(datesBetween(startDate, endDate));
 Usage examples can be found in the [`example` directory](example) of this repository.
 
 
-Contributing
-------------
+## Contributing
 
 To contribute to Dates Between, clone this repo locally and commit your code on a separate branch. Please write unit tests for your code, and run the linter before opening a pull-request:
 
@@ -89,11 +87,10 @@ make verify  # run all linters
 ```
 
 
-License
--------
+## License
 
 Dates Between is licensed under the [MIT] license.  
-Copyright &copy; 2016, Rowan Manning
+Copyright &copy; 2016–2017, Rowan Manning
 
 
 
