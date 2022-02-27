@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('proclaim');
+const {assert} = require('chai');
 
 describe('lib/dates-between', () => {
 	let datesBetween;
@@ -31,7 +31,7 @@ describe('lib/dates-between', () => {
 
 		it('generates dates between the given start and end dates (inclusive)', () => {
 			const dates = Array.from(returnValue);
-			assert.lengthEquals(dates, 5);
+			assert.lengthOf(dates, 5);
 			dates.forEach(date => assert.instanceOf(date, Date));
 			assert.strictEqual(dates[0].toISOString(), '2016-03-30T00:00:00.000Z');
 			assert.strictEqual(dates[1].toISOString(), '2016-03-31T00:00:00.000Z');
@@ -61,7 +61,7 @@ describe('lib/dates-between', () => {
 
 			it('generates an empty array', () => {
 				const dates = Array.from(returnValue);
-				assert.lengthEquals(dates, 0);
+				assert.lengthOf(dates, 0);
 			});
 
 		});
@@ -74,7 +74,7 @@ describe('lib/dates-between', () => {
 
 			it('generates an array containing only the start date', () => {
 				const dates = Array.from(returnValue);
-				assert.lengthEquals(dates, 1);
+				assert.lengthOf(dates, 1);
 				assert.strictEqual(dates[0].toISOString(), '2016-03-30T00:00:00.000Z');
 			});
 
@@ -88,7 +88,7 @@ describe('lib/dates-between', () => {
 
 			it('generates an array containing only the current date', () => {
 				const dates = Array.from(returnValue);
-				assert.lengthEquals(dates, 1);
+				assert.lengthOf(dates, 1);
 				assert.strictEqual(
 					dates[0].toISOString().split('T')[0],
 					(new Date()).toISOString().split('T')[0]
