@@ -25,7 +25,7 @@ for (const date of datesBetween(startDate, endDate)) {
 
 This library requires the following to run:
 
-  * [Node.js](https://nodejs.org/) 10+
+  * [Node.js](https://nodejs.org/) 14+
 
 
 ## Usage
