@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.1.0](https://github.com/rowanmanning/dates-between/compare/v3.0.1...v3.1.0) (2022-06-11)
+
+
+### Features
+
+* ensure typescript types are always valid ([0124355](https://github.com/rowanmanning/dates-between/commit/01243557229c84eeb4ae6ed277a545113a5aef85))
+
+
+### Miscellaneous
+
+* bump @commitlint/cli from 17.0.1 to 17.0.2 ([72da36e](https://github.com/rowanmanning/dates-between/commit/72da36e1756bd39a071824a56cc90b1e4fa94c3b))
+* bump @commitlint/config-conventional from 17.0.0 to 17.0.2 ([368053a](https://github.com/rowanmanning/dates-between/commit/368053afa3a0735482d3e088ab73386d38cc000c))
+* bump @rowanmanning/eslint-config from 3.5.0 to 4.0.2 ([d92fb72](https://github.com/rowanmanning/dates-between/commit/d92fb721b0942d8d7c6ec1601045d2de6e7cdc7a))
+* bump eslint from 8.16.0 to 8.17.0 ([2da2abd](https://github.com/rowanmanning/dates-between/commit/2da2abda40fa43d3f3fe936f0ac18024801f0d18))
+* fix eslint issues ([62dafd7](https://github.com/rowanmanning/dates-between/commit/62dafd77338b92f90c46bccca224f937f751cbb8))
+
 ### [3.0.1](https://github.com/rowanmanning/dates-between/compare/v3.0.0...v3.0.1) (2022-05-26)
 
 
