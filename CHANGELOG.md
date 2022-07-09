@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.1](https://github.com/rowanmanning/dates-between/compare/v3.1.0...v3.1.1) (2022-07-09)
+
+
+### Bug Fixes
+
+* hide the misc changelog section ([7fa1462](https://github.com/rowanmanning/dates-between/commit/7fa14623f3e5883f70cf471392d4f518cfebc00e))
+
 ## [3.1.0](https://github.com/rowanmanning/dates-between/compare/v3.0.1...v3.1.0) (2022-06-11)
 
 
