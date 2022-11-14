@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.2](https://github.com/rowanmanning/dates-between/compare/v3.1.1...v3.1.2) (2022-11-14)
+
+
+### Bug Fixes
+
+* improve TypeScript compatibility ([459a245](https://github.com/rowanmanning/dates-between/commit/459a2456a817da84337298630a426c712abc7c19))
+
 ## [3.1.1](https://github.com/rowanmanning/dates-between/compare/v3.1.0...v3.1.1) (2022-07-09)
 
 
