@@ -23,9 +23,11 @@
     "verify": "npm run verify:eslint && npm run verify:types",
     "verify:eslint": "eslint .",
     "verify:types": "tsc --noEmit --project ./jsconfig.json",
+    "build": "npm run build:types",
+    "build:types": "tsc --noEmit false --emitDeclarationOnly --project ./jsconfig.json",
+    "test": "npm run test:coverage",
     "test:unit": "mocha 'test/unit/**/*.test.js'",
     "test:coverage": "nyc npm run test:unit",
-    "test": "npm run test:coverage",
     "project:verify": "npx --yes @rowanmanning/validate-project@2 --type git node-library",
     "project:fix": "npx --yes @rowanmanning/validate-project@2 --type git node-library --fix",
     "prepare": "husky install"

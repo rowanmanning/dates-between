@@ -99,4 +99,10 @@ describe('lib/dates-between', () => {
 
 	});
 
+	describe('.default', () => {
+		it('aliases the module exports', () => {
+			assert.strictEqual(datesBetween, datesBetween.default);
+		});
+	});
+
 });
