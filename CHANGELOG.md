@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.3](https://github.com/rowanmanning/dates-between/compare/v3.1.2...v3.1.3) (2023-01-07)
+
+
+### Bug Fixes
+
+* bump json5 from 2.2.1 to 2.2.3 ([e07ec55](https://github.com/rowanmanning/dates-between/commit/e07ec559b34027024199da3344f9c1f701ac85c2))
+
 ## [3.1.2](https://github.com/rowanmanning/dates-between/compare/v3.1.1...v3.1.2) (2022-11-14)
 
 
