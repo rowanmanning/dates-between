@@ -1,6 +1,6 @@
 'use strict';
 
-const {assert} = require('chai');
+const assert = require('node:assert');
 
 describe('lib/dates-between', () => {
 	let datesBetween;
@@ -10,7 +10,7 @@ describe('lib/dates-between', () => {
 	});
 
 	it('exports a generator function', () => {
-		assert.isFunction(datesBetween);
+		assert.strictEqual(typeof datesBetween, 'function');
 		assert.strictEqual(datesBetween.constructor.name, 'GeneratorFunction');
 	});
 
@@ -26,13 +26,13 @@ describe('lib/dates-between', () => {
 		});
 
 		it('returns an iterable', () => {
-			assert.isFunction(returnValue[Symbol.iterator]);
+			assert.strictEqual(typeof returnValue[Symbol.iterator], 'function');
 		});
 
 		it('generates dates between the given start and end dates (inclusive)', () => {
 			const dates = Array.from(returnValue);
-			assert.lengthOf(dates, 5);
-			dates.forEach(date => assert.instanceOf(date, Date));
+			assert.strictEqual(dates.length, 5);
+			dates.forEach(date => assert.ok(date instanceof Date));
 			assert.strictEqual(dates[0].toISOString(), '2016-03-30T00:00:00.000Z');
 			assert.strictEqual(dates[1].toISOString(), '2016-03-31T00:00:00.000Z');
 			assert.strictEqual(dates[2].toISOString(), '2016-04-01T00:00:00.000Z');
@@ -61,7 +61,7 @@ describe('lib/dates-between', () => {
 
 			it('generates an empty array', () => {
 				const dates = Array.from(returnValue);
-				assert.lengthOf(dates, 0);
+				assert.strictEqual(dates.length, 0);
 			});
 
 		});
@@ -74,7 +74,7 @@ describe('lib/dates-between', () => {
 
 			it('generates an array containing only the start date', () => {
 				const dates = Array.from(returnValue);
-				assert.lengthOf(dates, 1);
+				assert.strictEqual(dates.length, 1);
 				assert.strictEqual(dates[0].toISOString(), '2016-03-30T00:00:00.000Z');
 			});
 
@@ -88,7 +88,7 @@ describe('lib/dates-between', () => {
 
 			it('generates an array containing only the current date', () => {
 				const dates = Array.from(returnValue);
-				assert.lengthOf(dates, 1);
+				assert.strictEqual(dates.length, 1);
 				assert.strictEqual(
 					dates[0].toISOString().split('T')[0],
 					(new Date()).toISOString().split('T')[0]
