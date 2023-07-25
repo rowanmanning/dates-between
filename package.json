@@ -1,6 +1,6 @@
 {
   "name": "dates-between",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Get all of the dates between two given dates",
   "keywords": [
     "between",
