@@ -3,38 +3,9 @@
 ## 4.0.2 (2023-07-25)
 
 
-### ⚠ BREAKING CHANGES
-
-* drop official support for npm v7
-* drop support for Node.js 14
-* drop support for Node.js versions below 14
-* mocha no longer supports Node.js v12
-
-### Features
-
-* ensure typescript types are always valid ([0124355](https://github.com/rowanmanning/dates-between/commit/01243557229c84eeb4ae6ed277a545113a5aef85))
-
-
 ### Bug Fixes
 
-* add support for Node.js 20 ([488ac97](https://github.com/rowanmanning/dates-between/commit/488ac9785e63d3c40425ec0ffd6ed2188dd802ca))
-* bump json5 from 2.2.1 to 2.2.3 ([e07ec55](https://github.com/rowanmanning/dates-between/commit/e07ec559b34027024199da3344f9c1f701ac85c2))
-* hide the misc changelog section ([7fa1462](https://github.com/rowanmanning/dates-between/commit/7fa14623f3e5883f70cf471392d4f518cfebc00e))
-* improve TypeScript compatibility ([459a245](https://github.com/rowanmanning/dates-between/commit/459a2456a817da84337298630a426c712abc7c19))
-* sort out broken releases ([69efa97](https://github.com/rowanmanning/dates-between/commit/69efa978d7013738662bdb44c8a561a6254cd4dd))
-
-
-### Documentation Changes
-
-* manually define changelog sections ([91070a3](https://github.com/rowanmanning/dates-between/commit/91070a3179077850809f89767048f9804a3315c9))
-
-
-### Miscellaneous
-
-* bump mocha from 9.2.2 to 10.0.0 ([7c3d051](https://github.com/rowanmanning/dates-between/commit/7c3d05153b53e8f30e71d721fd3b8ac674673c74))
-* drop official support for npm v7 ([c7a6760](https://github.com/rowanmanning/dates-between/commit/c7a6760f6e05217016718e30194159f429fd0e6e))
-* drop support for Node.js 14 ([5a1af29](https://github.com/rowanmanning/dates-between/commit/5a1af296900286f6a14c14390bd62ef261455e7b))
-* drop support for Node.js versions below 14 ([856adb9](https://github.com/rowanmanning/dates-between/commit/856adb9d825fa68a2398e90b7fa1a86a15975b3f))
+* sort out broken releases
 
 ## [4.0.1](https://github.com/rowanmanning/dates-between/compare/v4.0.0...v4.0.1) (2023-04-18)
 
