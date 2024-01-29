@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.1.0](https://github.com/rowanmanning/dates-between/compare/v5.0.0...v5.1.0) (2024-01-29)
+
+
+### Features
+
+* add official support for npm 10 ([917ad9c](https://github.com/rowanmanning/dates-between/commit/917ad9cd8ebf9520da474edea31492f9c54a73c0))
+
 ## [5.0.0](https://github.com/rowanmanning/dates-between/compare/v4.0.2...v5.0.0) (2023-09-11)
 
 
