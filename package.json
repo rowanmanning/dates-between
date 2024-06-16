@@ -20,8 +20,8 @@
     "npm": "8.x || 9.x || 10.x"
   },
   "scripts": {
-    "verify": "npm run verify:eslint && npm run verify:types",
-    "verify:eslint": "eslint .",
+    "verify": "npm run verify:biome && npm run verify:types",
+    "verify:biome": "biome check",
     "verify:types": "tsc --noEmit --project ./jsconfig.json",
     "build": "npm run build:types",
     "build:types": "tsc --noEmit false --emitDeclarationOnly --project ./jsconfig.json",
@@ -35,8 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",
     "@commitlint/config-conventional": "^18.4.2",
-    "@rowanmanning/eslint-config": "^8.0.0",
-    "eslint": "^8.10.0",
+    "@rowanmanning/biome-config": "^1.1.0",
     "husky": "^9.0.7",
     "nyc": "^15.1.0",
     "typescript": "^5.0.2"

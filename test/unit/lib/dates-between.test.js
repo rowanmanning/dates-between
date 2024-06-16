@@ -1,6 +1,6 @@
 'use strict';
 
-const {beforeEach, describe, it} = require('node:test');
+const { beforeEach, describe, it } = require('node:test');
 const assert = require('node:assert');
 
 describe('lib/dates-between', () => {
@@ -33,7 +33,9 @@ describe('lib/dates-between', () => {
 		it('generates dates between the given start and end dates (inclusive)', () => {
 			const dates = Array.from(returnValue);
 			assert.strictEqual(dates.length, 5);
-			dates.forEach(date => assert.ok(date instanceof Date));
+			for (const date of dates) {
+				assert.ok(date instanceof Date);
+			}
 			assert.strictEqual(dates[0].toISOString(), '2016-03-30T00:00:00.000Z');
 			assert.strictEqual(dates[1].toISOString(), '2016-03-31T00:00:00.000Z');
 			assert.strictEqual(dates[2].toISOString(), '2016-04-01T00:00:00.000Z');
@@ -53,7 +55,6 @@ describe('lib/dates-between', () => {
 		});
 
 		describe('when the end date is before the start date', () => {
-
 			beforeEach(() => {
 				startDate = new Date(Date.UTC(2016, 3, 3));
 				endDate = new Date(Date.UTC(2016, 2, 30));
@@ -64,11 +65,9 @@ describe('lib/dates-between', () => {
 				const dates = Array.from(returnValue);
 				assert.strictEqual(dates.length, 0);
 			});
-
 		});
 
 		describe('when no end date is specified', () => {
-
 			beforeEach(() => {
 				returnValue = datesBetween(startDate);
 			});
@@ -78,11 +77,9 @@ describe('lib/dates-between', () => {
 				assert.strictEqual(dates.length, 1);
 				assert.strictEqual(dates[0].toISOString(), '2016-03-30T00:00:00.000Z');
 			});
-
 		});
 
 		describe('when no start or end date is specified', () => {
-
 			beforeEach(() => {
 				returnValue = datesBetween();
 			});
@@ -92,12 +89,10 @@ describe('lib/dates-between', () => {
 				assert.strictEqual(dates.length, 1);
 				assert.strictEqual(
 					dates[0].toISOString().split('T')[0],
-					(new Date()).toISOString().split('T')[0]
+					new Date().toISOString().split('T')[0]
 				);
 			});
-
 		});
-
 	});
 
 	describe('.default', () => {
@@ -105,5 +100,4 @@ describe('lib/dates-between', () => {
 			assert.strictEqual(datesBetween, datesBetween.default);
 		});
 	});
-
 });
