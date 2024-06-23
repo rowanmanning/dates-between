@@ -16,7 +16,7 @@
   "bugs": "https://github.com/rowanmanning/dates-between/issues",
   "license": "MIT",
   "engines": {
-    "node": "18.x || 20.x",
+    "node": "18.x || 20.x || 22.x",
     "npm": "8.x || 9.x || 10.x"
   },
   "scripts": {
@@ -26,7 +26,7 @@
     "build": "npm run build:types",
     "build:types": "tsc --noEmit false --emitDeclarationOnly --project ./jsconfig.json",
     "test": "npm run test:coverage",
-    "test:unit": "node --test test/unit",
+    "test:unit": "cd test/unit && node --test",
     "test:coverage": "nyc npm run test:unit",
     "prepare": "husky"
   },
