@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.2.1](https://github.com/rowanmanning/dates-between/compare/v5.2.0...v5.2.1) (2024-07-27)
+
+
+### Bug Fixes
+
+* prevent husky from failing ([be14c96](https://github.com/rowanmanning/dates-between/commit/be14c9620d8679311f152f3c625f5733a3ecefb7))
+
 ## [5.2.0](https://github.com/rowanmanning/dates-between/compare/v5.1.0...v5.2.0) (2024-06-23)
 
 
