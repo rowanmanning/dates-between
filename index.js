@@ -47,5 +47,6 @@ function cloneDate(date) {
 	return new Date(date.valueOf());
 }
 
+/** @type {typeof datesBetween} */
 module.exports = datesBetween;
 module.exports.default = module.exports;
