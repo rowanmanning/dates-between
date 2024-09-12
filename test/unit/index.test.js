@@ -3,11 +3,11 @@
 const { beforeEach, describe, it } = require('node:test');
 const assert = require('node:assert');
 
-describe('lib/dates-between', () => {
+describe('dates-between', () => {
 	let datesBetween;
 
 	beforeEach(() => {
-		datesBetween = require('../../../lib/dates-between');
+		datesBetween = require('../..');
 	});
 
 	it('exports a generator function', () => {
