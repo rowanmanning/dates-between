@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.0.0](https://github.com/rowanmanning/dates-between/compare/v5.2.1...v6.0.0) (2025-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Node.js 18
+
+### Miscellaneous Chores
+
+* drop Node.js 18 ([0aad5c1](https://github.com/rowanmanning/dates-between/commit/0aad5c10e8df1b24ae283b2c416a8fcd95eb7e08))
+
 ## [5.2.1](https://github.com/rowanmanning/dates-between/compare/v5.2.0...v5.2.1) (2024-07-27)
 
 
