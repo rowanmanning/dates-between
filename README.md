@@ -12,13 +12,11 @@ for (const date of datesBetween(startDate, endDate)) {
 }
 ```
 
-
-## Table of Contents
-
-  * [Requirements](#requirements)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [License](#license)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [Migration](#migration)
+* [Contributing](#contributing)
+* [License](#license)
 
 
 ## Requirements
@@ -67,6 +65,11 @@ const dates = Array.from(datesBetween(startDate, endDate));
 ```
 
 Usage examples can be found in the [`example` directory](example) of this repository.
+
+
+## Migration
+
+A new major version of this project is released if breaking changes are introduced. We maintain a [migration guide](docs/migration.md) to help users migrate between these versions.
 
 
 ## Contributing
