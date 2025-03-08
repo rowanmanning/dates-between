@@ -37,7 +37,7 @@ npm install dates-between
 Load the library into your code with a `require` call:
 
 ```js
-const datesBetween = require('dates-between');
+const { datesBetween } = require('dates-between');
 ```
 
 The `datesBetween` function accepts two arguments, a start date and an end date. Both of these must be `Date` objects:

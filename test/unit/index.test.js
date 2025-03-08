@@ -7,7 +7,7 @@ describe('dates-between', () => {
 	let datesBetween;
 
 	beforeEach(() => {
-		datesBetween = require('../..');
+		datesBetween = require('../..').datesBetween;
 	});
 
 	it('exports a generator function', () => {
@@ -92,12 +92,6 @@ describe('dates-between', () => {
 					new Date().toISOString().split('T')[0]
 				);
 			});
-		});
-	});
-
-	describe('.default', () => {
-		it('aliases the module exports', () => {
-			assert.strictEqual(datesBetween, datesBetween.default);
 		});
 	});
 });

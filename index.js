@@ -11,12 +11,12 @@
  * @yields {Date}
  *     Yields the next date in the sequence.
  */
-function* datesBetween(startDate = new Date(), endDate = startDate) {
+exports.datesBetween = function* datesBetween(startDate = new Date(), endDate = startDate) {
 	const current = incrementDate(cloneDate(startDate), -1);
 	while (current < endDate) {
 		yield cloneDate(incrementDate(current));
 	}
-}
+};
 
 /**
  * Increment a date object by a number of days.
@@ -46,7 +46,3 @@ function incrementDate(date, amount = 1) {
 function cloneDate(date) {
 	return new Date(date.valueOf());
 }
-
-/** @type {typeof datesBetween} */
-module.exports = datesBetween;
-module.exports.default = module.exports;
