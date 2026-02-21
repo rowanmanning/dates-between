@@ -1,5 +1,51 @@
 # Changelog
 
+## [4.0.2](https://github.com/rowanmanning/dates-between/compare/v6.1.1...v4.0.2) (2026-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to named exports
+* drop Node.js 18
+* drop support for Node.js 16
+* drop official support for npm v7
+* drop support for Node.js 14
+* drop support for Node.js versions below 14
+* mocha no longer supports Node.js v12
+
+### Features
+
+* add Node.js 22 support ([90cb839](https://github.com/rowanmanning/dates-between/commit/90cb83931fbd4eb61dbe3d1db15357b38e4ead19))
+* add Node.js 24 support ([d85fc34](https://github.com/rowanmanning/dates-between/commit/d85fc349e88c4ce19edea757e2014e612c91d87e))
+* add official support for npm 10 ([917ad9c](https://github.com/rowanmanning/dates-between/commit/917ad9cd8ebf9520da474edea31492f9c54a73c0))
+* ensure typescript types are always valid ([0124355](https://github.com/rowanmanning/dates-between/commit/01243557229c84eeb4ae6ed277a545113a5aef85))
+
+
+### Bug Fixes
+
+* add support for Node.js 20 ([488ac97](https://github.com/rowanmanning/dates-between/commit/488ac9785e63d3c40425ec0ffd6ed2188dd802ca))
+* bump json5 from 2.2.1 to 2.2.3 ([e07ec55](https://github.com/rowanmanning/dates-between/commit/e07ec559b34027024199da3344f9c1f701ac85c2))
+* hide the misc changelog section ([7fa1462](https://github.com/rowanmanning/dates-between/commit/7fa14623f3e5883f70cf471392d4f518cfebc00e))
+* improve TypeScript compatibility ([459a245](https://github.com/rowanmanning/dates-between/commit/459a2456a817da84337298630a426c712abc7c19))
+* prevent husky from failing ([be14c96](https://github.com/rowanmanning/dates-between/commit/be14c9620d8679311f152f3c625f5733a3ecefb7))
+* remove npm engines ([a164299](https://github.com/rowanmanning/dates-between/commit/a164299f32cfdeb0370b3d2007205fc2b9c9978a))
+* sort out broken releases ([69efa97](https://github.com/rowanmanning/dates-between/commit/69efa978d7013738662bdb44c8a561a6254cd4dd))
+
+
+### Miscellaneous Chores
+
+* bump mocha from 9.2.2 to 10.0.0 ([7c3d051](https://github.com/rowanmanning/dates-between/commit/7c3d05153b53e8f30e71d721fd3b8ac674673c74))
+* drop Node.js 18 ([0aad5c1](https://github.com/rowanmanning/dates-between/commit/0aad5c10e8df1b24ae283b2c416a8fcd95eb7e08))
+* drop official support for npm v7 ([c7a6760](https://github.com/rowanmanning/dates-between/commit/c7a6760f6e05217016718e30194159f429fd0e6e))
+* drop support for Node.js 14 ([5a1af29](https://github.com/rowanmanning/dates-between/commit/5a1af296900286f6a14c14390bd62ef261455e7b))
+* drop support for Node.js 16 ([5a5cd6d](https://github.com/rowanmanning/dates-between/commit/5a5cd6dfcf8b4b8001f34547c38a199d1279ce9b))
+* drop support for Node.js versions below 14 ([856adb9](https://github.com/rowanmanning/dates-between/commit/856adb9d825fa68a2398e90b7fa1a86a15975b3f))
+
+
+### Code Refactoring
+
+* move to named exports ([8aab870](https://github.com/rowanmanning/dates-between/commit/8aab870f620a4e889a31160efaeb5aaf3b47f769))
+
 ## [6.1.1](https://github.com/rowanmanning/dates-between/compare/v6.1.0...v6.1.1) (2026-02-21)
 
 
