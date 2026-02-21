@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.1.1](https://github.com/rowanmanning/dates-between/compare/v6.1.0...v6.1.1) (2026-02-21)
+
+
+### Bug Fixes
+
+* remove npm engines ([a164299](https://github.com/rowanmanning/dates-between/commit/a164299f32cfdeb0370b3d2007205fc2b9c9978a))
+
 ## [6.1.0](https://github.com/rowanmanning/dates-between/compare/v6.0.0...v6.1.0) (2025-05-21)
 
 
