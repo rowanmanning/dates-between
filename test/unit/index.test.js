@@ -1,15 +1,8 @@
-'use strict';
-
-const { beforeEach, describe, it } = require('node:test');
-const assert = require('node:assert');
+import assert from 'node:assert';
+import { beforeEach, describe, it } from 'node:test';
+import { datesBetween } from '../../index.js';
 
 describe('dates-between', () => {
-	let datesBetween;
-
-	beforeEach(() => {
-		datesBetween = require('../..').datesBetween;
-	});
-
 	it('exports a generator function', () => {
 		assert.strictEqual(typeof datesBetween, 'function');
 		assert.strictEqual(datesBetween.constructor.name, 'GeneratorFunction');

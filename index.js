@@ -1,16 +1,14 @@
-'use strict';
-
 /**
  * @import { datesBetween } from '.'
  */
 
 /** @type {datesBetween} */
-exports.datesBetween = function* datesBetween(startDate = new Date(), endDate = startDate) {
+export function* datesBetween(startDate = new Date(), endDate = startDate) {
 	const current = incrementDate(cloneDate(startDate), -1);
 	while (current < endDate) {
 		yield cloneDate(incrementDate(current));
 	}
-};
+}
 
 /**
  * @param {Date} date
