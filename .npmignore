@@ -1,9 +1,0 @@
-.commitlintrc.json
-.github
-.husky
-CHANGELOG.md
-biome.json
-docs
-example
-jsconfig.json
-test
