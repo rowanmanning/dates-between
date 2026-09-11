@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 import { beforeEach, describe, it } from 'node:test';
-import { datesBetween } from '../../index.js';
+import { datesBetween } from '../../index.ts';
 
 describe('dates-between', () => {
 	it('exports a generator function', () => {
@@ -9,9 +9,9 @@ describe('dates-between', () => {
 	});
 
 	describe('datesBetween()', () => {
-		let endDate;
-		let returnValue;
-		let startDate;
+		let endDate: Date;
+		let returnValue: Generator<Date>;
+		let startDate: Date;
 
 		beforeEach(() => {
 			startDate = new Date(Date.UTC(2016, 2, 30));

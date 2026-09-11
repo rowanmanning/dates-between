@@ -20,11 +20,10 @@
     "node": "22.x || 24.x"
   },
   "scripts": {
-    "verify": "npm run verify:biome && npm run verify:types",
-    "verify:biome": "biome check",
-    "verify:types": "tsc --noEmit --project ./jsconfig.json",
+    "build": "rm -rf dist && tsc",
+    "verify": "biome check",
     "test": "npm run test:unit",
-    "test:unit": "node --test --experimental-test-coverage --test-coverage-branches=100 --test-coverage-functions=100 --test-coverage-lines=100 test/unit/**/*.test.js",
+    "test:unit": "node --test --experimental-test-coverage --test-coverage-branches=100 --test-coverage-functions=100 --test-coverage-lines=100 test/unit/**/*.test.ts",
     "prepare": "husky || true"
   },
   "devDependencies": {
@@ -32,14 +31,18 @@
     "@commitlint/config-conventional": "^20.5.3",
     "@rowanmanning/biome-config": "^3.1.0",
     "husky": "^9.1.7",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "default": "./index.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
-  "main": "./index.js",
-  "types": "./index.d.ts"
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "index.ts"
+  ]
 }
