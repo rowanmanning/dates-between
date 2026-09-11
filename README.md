@@ -34,10 +34,10 @@ Install with [npm](https://www.npmjs.com/):
 npm install dates-between
 ```
 
-Load the library into your code with a `require` call:
+Import the library into your code:
 
 ```js
-const { datesBetween } = require('dates-between');
+import { datesBetween } from 'dates-between';
 ```
 
 The `datesBetween` function accepts two arguments, a start date and an end date. Both of these must be `Date` objects:
